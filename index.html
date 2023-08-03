@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="calc-container">
+            <div id="calc-display">
+                <h1 id="n1"></h1>
+                <h1 id="op"></h1>
+                <h1 id="n2"></h1>
+            </div>
+            <div id="buttons">
+                <button class="btn-calc clear">AC</button>
+                <button class="btn-calc op">X<span>2</span></button>
+                <button class="btn-calc op">+</button>
+                <button class="btn-calc op">-</button>
+                <button class="btn-calc num">7</button>
+                <button class="btn-calc num">8</button>
+                <button class="btn-calc num">9</button>
+                <button class="btn-calc op">*</button>
+                <button class="btn-calc num">4</button>
+                <button class="btn-calc num">5</button>
+                <button class="btn-calc num">6</button>
+                <button class="btn-calc op">/</button>
+                <button class="btn-calc num">1</button>
+                <button class="btn-calc num">2</button>
+                <button class="btn-calc num">3</button>
+                <button class="btn-calc equal" id="equal">=</button>
+                <button class="btn-calc num" id="zero">0</button>
+                <button class="btn-calc num">.</button>
+            </div>
+        </div>
+    </main>
+    <div id="credits">
+        <h4><i>Created by Arthur Perone</i></h4>
+    </div>
+
+    <script src="./scripts/keyboardListner.js"></script>
+    <script src="./scripts/operations.js"></script>
+</body>
+
+</html>
